@@ -20,6 +20,18 @@ if ($conn->query($sql) === TRUE) {
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
+<?php
+// ... [your database connection and registration code]
+
+if ($conn->query($sql) === TRUE) {
+    header("Location: welcome.php"); // Redirect to the welcome page
+    exit();
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
+?>
 
 $conn->close();
 ?>
