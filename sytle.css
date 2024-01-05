@@ -1,14 +1,17 @@
-/* Example CSS for styling */
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.header {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em;
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px #000;
 }
-
-/* Add more styles for buttons, forms, images, etc. */
