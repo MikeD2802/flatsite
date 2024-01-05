@@ -10,7 +10,13 @@
         <h1>Welcome to Our Fitness Challenge Blog</h1>
     </div>
 
-    <!-- Add your HTML content here -->
+   <form action="register.php" method="post" name="registrationForm" onsubmit="return validateForm()">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Register">
+    </form>
 
     <script>
         // Inline JavaScript or reference to external JS file
